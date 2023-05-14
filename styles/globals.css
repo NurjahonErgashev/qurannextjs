@@ -14,7 +14,7 @@ body {
 
   padding: 0;
   margin: 0;
-  background: url('../public/backgroundBlack.jpg');
+  background: url('/backgroundBlack.webp');
   /* background: linear-gradient(to left bottom , rgb(35, 35, 153) , rgb(24, 177, 24),rgb(2, 138, 2) ); */
   background-repeat: no-repeat;
   background-size: cover;
