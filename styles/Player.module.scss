@@ -1,0 +1,96 @@
+.Player {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  background: #0bb80b9a;
+  .container {
+    width: 70%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 10px 0px;
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      .btns{
+        display: flex;
+        gap: 1em;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .Player {
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      .btns {
+        display: flex;
+        gap: 20px;
+        button{
+          padding: 0px 0px;
+          svg{
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+
+      /* Устанавливаем фоновый цвет и высоту элемента */
+      audio {
+        width: 100%;
+        background-color: transparent;
+        height: 50px;
+      }
+
+      /* Устанавливаем цвет и размер кнопок управления */
+      audio::-webkit-media-controls-volume-slider {
+        display: none;
+      }
+      audio::-webkit-media-controls-panel {
+        background-color: #0bb80b9a;
+      }
+      audio::-webkit-media-controls-mute-button {
+        display: none;
+      }
+
+      audio::-webkit-media-controls-play-button {
+        height: 50px;
+        width: 50px;
+        font-size: 21px;
+        
+      }
+
+      /* Устанавливаем цвет и размер ползунка прокрутки */
+      audio::-webkit-media-controls-seek-back-button {
+        height: 20px;
+        width: 20px;
+        background-color: transparent;
+      }
+
+      audio::-webkit-media-controls-seek-forward-button {
+        height: 20px;
+        width: 20px;
+        background-color: #ccc;
+      }
+
+      audio::-webkit-media-controls-current-time-display {
+        font-size: 12px;
+        color: #333;
+      }
+
+      audio::-webkit-media-controls-time-remaining-display {
+        font-size: 12px;
+        color: #333;
+      }
+    }
+  }
+}

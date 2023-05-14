@@ -1,0 +1,96 @@
+.Home {
+  width: 100%;
+  height: 100%;
+  .container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      position: relative;
+      .item {
+        cursor: pointer;
+        width: 25vw;
+        height: 65vh;
+        color: transparent;
+        font-size: 1em;
+        display: flex;
+        transition: 0.5s;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        h1 {
+          font-size: 1.5em;
+        }
+        &:nth-child(1) {
+          background: url("../public/nomoz.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position-y: 50%;
+        }
+        &:nth-child(2) {
+          background: url("../public/time.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position-y: 50%;
+        }
+
+        &:hover {
+          transition: 0.5s;
+          color: white;
+
+          opacity: 0.9;
+          background-position-y: 50%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) and (min-width : 450px) {
+  .Home {
+    width: 100%;
+    height: 100%;
+    .container {
+      width: 90%;
+      height: 100%;
+      margin: 0 auto;
+      .wrapper {
+        .item {
+          width: 100%;
+          height: 50vh;
+          background: red;
+          h1 {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 449px)  {
+  .Home {
+    width: 100%;
+    height: 100%;
+    .container {
+      width: 90%;
+      height: 100%;
+      margin: 0 auto;
+      .wrapper {
+        flex-direction: column;
+        .item {
+          width:50%;
+          height: 30vh;
+          background: red;
+          h1 {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}

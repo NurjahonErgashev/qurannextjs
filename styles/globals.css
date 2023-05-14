@@ -1,9 +1,24 @@
-html,
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap");
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  
+  font-family: "Jost", sans-serif;
+
+}
 body {
+  width: 100%;
+  height: 100%;
+
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: url('../public/backgroundBlack.jpg');
+  /* background: linear-gradient(to left bottom , rgb(35, 35, 153) , rgb(24, 177, 24),rgb(2, 138, 2) ); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 a {
@@ -15,12 +30,15 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+@media (max-width : 640px){
   body {
-    color: white;
-    background: black;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: 50%;
   }
 }
